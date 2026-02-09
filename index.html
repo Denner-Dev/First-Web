@@ -1,67 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-    <head>
-        <!-- Metadados -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <!-- Vinculação com CSS -->
-        <link rel="stylesheet" href="style.css">
-        
-        <!-- Título da página -->
-        <title>Denner Fernandes - Portfólio</title>
-    </head>
-    <body>
-        <!-- HEADER - SEÇÃO DE APRESENTAÇÃO -->
-        <header>
-            <!-- Foto de perfil do Denner -->
-            <img src="Denner.jpg" alt="Fotografia do rosto do Denner" class="photo">
-            
-            <!-- Nome principal -->
-            <h1 id="title">Denner Fernandes</h1>
-        </header>
 
-        <!-- MAIN CONTENT - SEÇÃO DE POSTS/BLOG -->
-        <section>
-            <!-- Subtítulo da seção -->
-            <header>
-                <h2 class="subtitle">Posts</h2>
-            </header>
-            
-            <!-- Artigo/Post 1 -->
-            <article class="post">
-                <!-- Cabeçalho do post -->
-                <header>
-                    <h3 class="post_title">Post #1 - Tecnologia e Inovação</h3>
-                    <!-- Imagem ilustrativa do post -->
-                    <img src="CodeHTML.jpg" alt="Ilustação de Códigos" class="post_image">
-                </header>
-                
-                <!-- Conteúdo do post -->
-                <p class="post_content">
-                    A <a href="https://www.google.com.br" target="_blank">Tecnologia desempenha um papel fundamental</a> 
-                    em praticamente todos os aspectos da vida moderna, transformando a maneira como vivemos, trabalhamos e interagimos. 
-                    Desde a invenção da roda até os avanços na inteligência artificial, a evolução tecnológica tem sido uma força motriz 
-                    de progresso e inovação. No mundo contemporâneo, a tecnologia é um componente essencial em áreas como comunicação, 
-                    saúde, educação, transporte e entretenimento.
-                </p>
-            </article>
-        </section>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap"
+    rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevLinks</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-        <!-- FOOTER - SEÇÃO DE CONTATOS -->
-        <footer>
-            <!-- Lista de links para redes sociais -->
-            <ul class="contacts_list">
-                <li>
-                    <a href="https://www.facebook.com.br/" target="_blank">Facebook</a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com.br/" target="_blank">Instagram</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-                </li>
-            </ul>
-        </footer>
-    </body>
+<body>
+  <div id="container">
+    <div id="profile">
+      <img src="./assets/avatar.png" alt="Foto de Denner Fernandes,usando camisa preta, barba e fundo branco." />
+      <p>Denner Fernandes</p>
+    </div>
+    <div id="switch" onclick="toggleMode()">
+      <button></button>
+      <span></span>
+    </div>
+    <ul>
+      <li>
+        <a href="https://github.com/Denner-Dev/" target="_blank">Ver meu portifólio</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/denner-fernandes01/" target="_blank">Trajetória profissonal</a>
+      </li>
+    </ul>
+    <div id="social-links">
+      <a href="https://github.com/Denner-Dev/" target="_blank">
+        <ion-icon name="logo-github"></ion-icon>
+      </a>
+      <a href="https://www.linkedin.com/in/denner-fernandes01/" target="_blank"><ion-icon
+          name="logo-linkedin"></ion-icon></a>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=denner.fernandes01@gmail.com&su=Contato%20profissional&body=Olá,%20Denner!%0D%0A%0D%0AVi%20seu%20perfil%20e%20quero%20conversar%20sobre%20[assunto].%0D%0A%0D%0ANome%3A%20%0D%0AEmpresa%3A%20%0D%0AResumo%20(1-7%20linhas)%3A%20%0D%0A"
+        target="_blank"><ion-icon name="mail-outline"></ion-icon></a>
+
+      <a href="https://api.whatsapp.com/send/?phone=5511993993970&text=Ol%C3%A1%21+Encontrei+seu+portf%C3%B3lio+e+gostaria+de+falar+sobre+uma+oportunidade.+Podemos+agendar+uma+conversa%3F&type=phone_number&app_absent=0"
+        target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
+    </div>
+    <footer>
+      Denner Fernandes — Desenvolvedor Full Stack • Portfólio • Projetos •
+      Contato
+    </footer>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <script src="./script.js"></script>
+</body>
+
 </html>
