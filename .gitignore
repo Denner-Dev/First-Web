@@ -4,15 +4,7 @@
 *.swp
 *.swo
 *~
+
+# Sistema
 .DS_Store
-
-# Dependencies
-node_modules/
-
-# Logs
-*.log
-npm-debug.log*
-
-# Build
-dist/
-build/
+Thumbs.db
